@@ -35,7 +35,8 @@
                                     <h2 class="text-3xl font-semibold">Lionel Messi</h2>
                                     <p>36 Goals | 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button class="btn btn-primary px-12">SELECT</button>
+                                        <button onclick="playerSelect(this)" class="btn btn-primary px-12">SELECT
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +49,8 @@
                                     <h2 class="text-3xl font-semibold">Neymar Jr</h2>
                                     <p>36 Goals | 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button class="btn btn-primary px-12">SELECT</button>
+                                        <button onclick="playerSelect(this)" class="btn btn-primary px-12">SELECT
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +64,8 @@
                                     <h2 class="text-3xl font-semibold">Sergio Ramos</h2>
                                     <p>36 Goals | 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button class="btn btn-primary px-12">SELECT</button>
+                                        <button onclick="playerSelect(this)" class="btn btn-primary px-12">SELECT
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -76,7 +79,8 @@
                                     <h2 class="text-3xl font-semibold">Kylian Mbappé</h2>
                                     <p>36 Goals | 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button class="btn btn-primary px-12">SELECT</button>
+                                        <button onclick="playerSelect(this)"
+                                            class="btn btn-primary px-12">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +94,8 @@
                                     <h2 class="text-3xl font-semibold">Vítor Machado</h2>
                                     <p>36 Goals | 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button class="btn btn-primary px-12">SELECT</button>
+                                        <button onclick="playerSelect(this)"
+                                            class="btn btn-primary px-12">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -104,7 +109,8 @@
                                     <h2 class="text-3xl font-semibold">Renato Sanches</h2>
                                     <p>36 Goals | 120 Assist</p>
                                     <div class="card-actions justify-center">
-                                        <button class="btn btn-primary px-12">SELECT</button>
+                                        <button onclick="playerSelect(this)"
+                                            class="btn btn-primary px-12">SELECT</button>
                                     </div>
                                 </div>
                             </div>
@@ -112,11 +118,12 @@
                     </div>
                 </div>
                 <div class="basis-1/4">
-                    <div class="h-1/3 py-5 bg-gray-500 rounded">
-                        <h2 class="text-3xl font-semibold text-center">Selected-V</h2>
-
+                    <div class="h-1/3 py-5 bg-gray-600 rounded text-start pl-16">
+                        <h2 class="text-3xl font-semibold">Selected-V</h2>
+                        <ol id="selected-players">
+                        </ol>
                     </div>
-                    <div class="py-5 mt-5 text-center bg-gray-500 rounded">
+                    <div class="py-5 mt-5 text-center bg-gray-600 rounded">
                         <div class="">
                             <h2 class="text-4xl font-semibold">Budget</h2>
                             <div class="mt-5">
@@ -136,7 +143,7 @@
                         </div>
                         <button id="" class="bg-blue-600 text-white py-2 px-10 rounded">Calculate Total</button>
                         <div class="flex justify-around m-2">
-                            <h4 class="text-2xl font-medium">Total</h4>
+                            <h4 class="text-2xl font-medium">Total:</h4>
                             <h4 class="text-2xl font-medium">$11000</h4>
                         </div>
                     </div>
