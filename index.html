@@ -127,24 +127,27 @@
                         <div class="">
                             <h2 class="text-4xl font-semibold">Budget</h2>
                             <div class="mt-5">
-                                <span>Per Player: </span> <input id="" class="w-2/5 px-4 py-2 rounded bg-gray-300"
-                                    type="text">
+                                <span>Per Player: </span> <input id="player-cost"
+                                    class="w-2/5 px-4 py-2 rounded bg-gray-300" type="text">
                             </div>
-                            <button id="" class="bg-blue-600 text-white py-2 px-10 rounded mt-5">Calculate</button>
-                            <h2 class="text-2xl font-medium mt-5">Player Expenses: $<span>00</span></h2>
+                            <button id="calculate-btn"
+                                class="bg-blue-600 text-white py-2 px-10 rounded mt-5">Calculate</button>
+                            <h2 class="text-2xl font-medium mt-5">Player Expenses: $<span id="total-expenses">00</span>
+                            </h2>
                         </div>
                         <div class="mt-5">
-                            <span>Manager: </span> <input id="food-cost" class="w-2/5 px-4 py-2 rounded bg-gray-300"
+                            <span>Manager: </span> <input id="manager-cost" class="w-2/5 px-4 py-2 rounded bg-gray-300"
                                 type="text"> <br>
                             <br>
-                            <span>Coach: </span> <input id="rent-cost" class="w-2/5 px-4 py-2 rounded bg-gray-300"
+                            <span>Coach: </span> <input id="coach-cost" class="w-2/5 px-4 py-2 rounded bg-gray-300"
                                 type="text"> <br>
                             <br>
                         </div>
-                        <button id="" class="bg-blue-600 text-white py-2 px-10 rounded">Calculate Total</button>
+                        <button id="calculate-total-btn" class="bg-blue-600 text-white py-2 px-10 rounded">Calculate
+                            Total</button>
                         <div class="flex justify-around m-2">
                             <h4 class="text-2xl font-medium">Total:</h4>
-                            <h4 class="text-2xl font-medium">$11000</h4>
+                            <h4 class="text-2xl font-medium">$ <span id="allTotalCost">000</span></h4>
                         </div>
                     </div>
                 </div>
@@ -155,6 +158,7 @@
         <h3 class="pt-8">Copyright @ 2022 All Rights Reserved.</h3>
     </footer>
     <script src="js/selected.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 
 </html>
